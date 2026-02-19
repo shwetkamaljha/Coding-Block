@@ -1,4 +1,4 @@
-// Column symmetric pattern
+// Column asymmetric pattern
 #include <iostream>
 using namespace std;
 int main() {
@@ -7,19 +7,23 @@ int main() {
     cin >> n;
     for(int i = 1 ; i<=n ; i++)
     {
+        // a loop
         for (int j=1 ; j<=n-i ;j++)
         {
             cout<<"  ";
         }
-        //star
+        //star 
+        //b loop
         for(int j=1 ; j<=i ; j++)
         {
             cout<<"* ";
         }
-        for(int j=1 ; j<=i ; j++)
+        //b loop 
+        for(int j=2 ; j<=i ; j++)
         {
             cout<<"* ";
         }
+        //a loop
          for (int j=1 ; j<=n-i ;j++)
         {
             cout<<"  ";
